@@ -11,6 +11,7 @@ namespace TestCache
         }
         public static void Add(string key, string value)
         {
+            var a = 5;
             var cachExprity = new MemoryCacheEntryOptions()
             {
                 AbsoluteExpiration = DateTime.Now.AddSeconds(60),
